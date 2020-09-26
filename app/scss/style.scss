@@ -1,12 +1,42 @@
-html{
-    box-sizing: border-box;
-}
-*,
-*::before,
-*::after{
-box-sizing: inherit;
-}
-body{
-    background-color: #cfcfcf;
-    transition: all .3s;
+@import 'vars';
+@import 'global';
+@import 'fonts';
+.header {
+    background-color: #fff;
+    &__top {
+        background-color: $lgrey;
+        height: 100px;
+    }
+    &__flexwrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        min-width: 220px;
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 700;
+            color: #000000;
+        }
+        span {
+            color: #0674ec;
+        }
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__btn {
+        width: 141px;
+        height: 36px;
+        background-color: $blue;
+        color: #fff;
+        border-radius: 17px;
+        display: flex;
+        align-items: center;
+    }
 }
